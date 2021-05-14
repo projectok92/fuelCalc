@@ -13,13 +13,12 @@ body {
     align-self: start;
     min-width: 300px;
     width: 100%;
-    padding: 1rem;
+    /* padding: 1rem; */
     font-family: 'Open Sans', sans-serif;
-    overflow: hidden;
-
 }
 
 header {
+    padding-top: 1rem;
     font-size: 1rem;
 }
 
@@ -31,7 +30,6 @@ label, button {
     margin-top: 1rem;
     margin-bottom: 0.5rem;
     width: 100%;
-
 }
 
 input:focus,
@@ -87,7 +85,7 @@ footer {
     justify-content: space-between;
     padding: 2rem 0;
     font-size: medium;
-
+    padding-bottom: 1rem;
 }
 
 a {
