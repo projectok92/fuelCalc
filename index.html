@@ -7,31 +7,40 @@
     <link rel="shortcut icon" href="/logo.ico" type="image/x-icon">
     <title>Калькулятор пального</title>
     <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/0f58cf09cf.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="container">
+        <header>
+            <h1><i class="fas fa-gas-pump"></i> КАЛЬКУЛЯТОР</br>
+                ПАЛЬНОГО</h1>
+        </header>
+
+        <div class="math-part">
+            <form id="inputs" onsubmit="return false">
+                <label for="distance"><i class="fas fa-road"></i> Відстань до пункту в км:</label><br>
+                <input type="number" name="distance" id="distance-input" required value="100" pattern="[0-9]{}" inputmode="numeric"><br>
+    
+                <label for="price"><i class="fas fa-hryvnia"></i> Ціна на пальне в грн:</label><br>
+                <input type="number" name="price" id="price-input" required value="30" pattern="[0-9]{}*" step="0.1" inputmode="decimal"><br>
+    
+                <label for="discount"><i class="fas fa-tag"></i> Знижка на літр в грн:</label><br>
+                <input type="number" name="discount" id="discount-input" value="3" pattern="[0-9]{}*" step="0.1" inputmode="decimal"><br>
+              
+                <label for="lph"><i class="fas fa-tachometer-alt"></i> Росхід в літрах на 100 км:</label><br>
+                <input type="number" name="lph" id="lph-input" required value="10" pattern="[0-9]{}*" step="0.1" inputmode="decimal"><br>
+    
+                <p id="printedResult"></br></p>
         
-        <h1><i class="fas fa-gas-pump"></i> КАЛЬКУЛЯТОР</br>
-        ПАЛЬНОГО</h1>
-    
-        <form id="inputs" onsubmit="return false">
-            <label for="distance"><i class="fas fa-road"></i> Відстань до пункту в км:</label><br>
-            <input type="number" name="distance" id="distance-input" required value="100" pattern="[0-9]{}" inputmode="numeric"><br>
-
-            <label for="price"><i class="fas fa-hryvnia"></i> Ціна на пальне в грн:</label><br>
-            <input type="number" name="price" id="price-input" required value="30" pattern="[0-9]{}*" step="0.1" inputmode="decimal"><br>
-
-            <label for="discount"><i class="fas fa-tag"></i> Знижка на Л в грн:</label><br>
-            <input type="number" name="discount" id="discount-input" value="3" pattern="[0-9]{}*" step="0.1" inputmode="decimal"><br>
-          
-            <label for="lph"><i class="fas fa-tachometer-alt"></i> Росхід в літрах на 100 км:</label><br>
-            <input type="number" name="lph" id="lph-input" required value="10" pattern="[0-9]{}*" step="0.1" inputmode="decimal"><br>
-
-            <p id="printedResult"></br></p>
-    
-            <button onclick="result()" type="" name="submit" id="submit">РОЗРАХУВАТИ</button>
-        </form>
+                <button onclick="result()" type="" name="submit" id="submit">РОЗРАХУВАТИ</button>
+            </form>
+        </div>
+        
+        <footer>
+            <span>Copyright ©</span><span> | </span><span id="year"></span><span> | </span><span><a href="https://www.instagram.com/tato.koval">Oleksandr Koval</a></span>
+        </footer>
 
     </div>
     <script src="/script.js"></script>
