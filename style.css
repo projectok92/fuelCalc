@@ -9,11 +9,12 @@ body {
     background-color: teal;
     color: white;
     display: grid;
+    grid-template-columns: 1fr;
     justify-content: center;
     align-self: start;
     min-width: 300px;
     width: 100%;
-    /* padding: 1rem; */
+    padding: 2rem;
     font-family: 'Open Sans', sans-serif;
 }
 
