@@ -23,13 +23,13 @@
             <input type="number" name="distance" id="distance-input" required value="100" pattern="[0-9]{}" inputmode="numeric"><br>
 
             <label for="price"><i class="fas fa-hryvnia"></i> Ціна на пальне в грн:</label><br>
-            <input type="number" name="price" id="price-input" required value="30" pattern="[0-9]{}*" step="0.1" inputmode="decimal"><br>
+            <input type="number" name="price" id="price-input" required value="30" pattern="[0-9]{}*" step="0.01" inputmode="decimal"><br>
 
             <label for="discount"><i class="fas fa-tag"></i> Знижка на літр в грн:</label><br>
-            <input type="number" name="discount" id="discount-input" value="3" pattern="[0-9]{}*" step="0.1" inputmode="decimal"><br>
+            <input type="number" name="discount" id="discount-input" value="3" pattern="[0-9]{}*" step="0.01" inputmode="decimal"><br>
             
             <label for="lph"><i class="fas fa-tachometer-alt"></i> Росхід в літрах на 100 км:</label><br>
-            <input type="number" name="lph" id="lph-input" required value="10" pattern="[0-9]{}*" step="0.1" inputmode="decimal"><br>
+            <input type="number" name="lph" id="lph-input" required value="10" pattern="[0-9]{}*" step="0.01" inputmode="decimal"><br>
 
             <p id="printedResult"></br></p>
     
@@ -40,7 +40,7 @@
     <footer>
         <span>Copyright ©</span><span> | </span><span id="year"></span><span> | </span><span><a href="https://www.instagram.com/tato.koval">Oleksandr Koval</a></span>
     </footer>
-    
+
     <script src="/script.js"></script>
 </body>
 </html>
