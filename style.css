@@ -59,6 +59,8 @@ button:hover {
     height: 3rem;
     color: white;
     font-size: large;
+    font-size: 1.5rem;
+    border-radius: 0.5rem;
 }
 
 #printedResult {
