@@ -11,9 +11,10 @@
 </head>
 <body>
     <div class="container">
+        
         <h1><i class="fas fa-gas-pump"></i> КАЛЬКУЛЯТОР</br>
         ПАЛЬНОГО</h1>
-
+    
         <form id="inputs" onsubmit="return false">
             <label for="distance"><i class="fas fa-road"></i> Відстань до пункту в км:</label><br>
             <input type="number" name="distance" id="distance-input" required value="100" pattern="[0-9]{}" inputmode="numeric"><br>
@@ -28,7 +29,7 @@
             <input type="number" name="lph" id="lph-input" required value="10" pattern="[0-9]{}*" step="0.1" inputmode="decimal"><br>
 
             <p id="printedResult"></br></p>
-
+    
             <button onclick="result()" type="" name="submit" id="submit">РОЗРАХУВАТИ</button>
         </form>
 
