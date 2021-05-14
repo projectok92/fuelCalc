@@ -24,6 +24,7 @@ header {
 
 form {
     margin-top: 1rem;
+    width: 100%;
 }
 
 label, button {
@@ -85,7 +86,7 @@ footer {
     justify-content: space-between;
     padding: 2rem 0;
     font-size: medium;
-    padding-bottom: 1rem;
+    width: 100%;
 }
 
 a {
