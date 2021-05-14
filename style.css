@@ -17,9 +17,8 @@ body {
     display: grid;
     justify-content: center;
     align-self: start;
-    min-width: 360px;
     width: auto;
-    padding: 20px;
+    padding: 1rem;
     font-family: 'Open Sans', sans-serif;
 }
 
