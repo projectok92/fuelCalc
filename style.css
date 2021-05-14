@@ -28,7 +28,6 @@ form {
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
     flex-direction: column;
-
 }
 
 label, button {
@@ -60,8 +59,8 @@ input {
 
 input:invalid {
     border: 2px solid lightsalmon;
-  }
+}
   
-  input:valid {
+input:valid {
     border: 2px solid black;
-  }
+}
