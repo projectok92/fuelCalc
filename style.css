@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-body {
+.everything {
     margin: 0 auto;
     background-color: teal;
     color: white;
