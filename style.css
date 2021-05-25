@@ -90,6 +90,7 @@ input:valid {
 
 footer {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding: 2rem 0;
     font-size: medium;
